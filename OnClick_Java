@@ -1,0 +1,7 @@
+    /**
+     * This method is activated when I press a button that has android:onClick="increment"
+     */
+    public void increment(View view){
+        quantity = quantity +1;
+        display(quantity);
+    }
