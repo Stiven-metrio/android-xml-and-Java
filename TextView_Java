@@ -1,0 +1,7 @@
+    /**
+     * This method display the given quantity value on the screen
+     * The TextView require the ID id_numb
+     */
+    private void display(int number){
+        TextView quantityTextView = (TextView) findViewById(R.id.id_numb);
+        quantityTextView.setText("" + number);
