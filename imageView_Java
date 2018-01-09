@@ -1,0 +1,4 @@
+    public void restart(View view){
+        ImageView img = (ImageView)findViewById(R.id.android_cookie_image_view);
+        img.setImageResource(R.drawable.before_cookie);
+    }
