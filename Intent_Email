@@ -1,0 +1,11 @@
+        String[] emails = {"jhonatanmetrio@gmail.com","jhonatan_ssm@hotmail.com"};
+        
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setType("text/plain");
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, emails);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Android Test -- Coffee Order");
+        intent.putExtra(Intent.EXTRA_TEXT, summary);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
